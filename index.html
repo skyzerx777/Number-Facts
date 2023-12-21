@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Number Fact</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="form">
+        <div class="form__header">
+          <h1 class="header__text">Number Facts</h1>
+        </div>
+        <div class="row row_type">
+          <label for="typeList">Select type of a number: </label>
+          <select id="typeList" class="form__input">
+            <option value="trivia" selected>Trivia</option>
+            <option value="math">Math</option>
+            <option value="date">Date</option>
+            <option value="year">Year</option>
+          </select>
+        </div>
+        <div class="row">
+          <label>
+            Input a number:
+            <input
+              type="number"
+              id="numberInput"
+              class="form__input"
+              autofocus
+            />
+          </label>
+        </div>
+        <div class="row button-row">
+          <button id="getButton" type="submit" class="form__button">
+            Get a fact
+          </button>
+          <button id="getRandomButton" type="submit" class="form__button">
+            Random fact
+          </button>
+        </div>
+        <p id="errorText" class="error"></p>
+      </form>
+    </div>
+    <div class="container container__output">
+      <p id="output"></p>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
